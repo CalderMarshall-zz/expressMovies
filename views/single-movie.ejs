@@ -1,0 +1,27 @@
+<% include head.ejs %>
+
+<body>
+<div>
+    <div class="row">
+        <div class="col-lg-4 movie">
+            <h1>
+                <%= currentMovie.title %>
+            </h1>
+            <img src="<%= imageBaseUrl + currentMovie.poster_path %>"/>
+
+
+        </div>
+        <div class="col-lg-4">
+            <h2>Budget</h2>
+            <p><%= currentMovie.budget %></p>
+
+            <h3>Original Title</h3>
+            <p><%= currentMovie.original_title %></p>
+
+            <h3>Synopsis</h3>
+            <p><%= currentMovie.overview %></p>
+        </div>
+    </div>
+</div>
+
+</body>
